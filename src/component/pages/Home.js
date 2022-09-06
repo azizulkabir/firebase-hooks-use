@@ -6,6 +6,7 @@ import About from '../Authentication/Login';
 
 import CheckOut from './CheackOut';
 import Header from './Header';
+import Contact from './Contact';
 
 const Home = () => {
     return (
@@ -14,7 +15,7 @@ const Home = () => {
            <Routes>
             <Route path='/login' element={<Login></Login>}></Route>
             <Route path='/register' element={<Register></Register>}></Route>
-            <Route path='/about' element={<About></About>}></Route>
+            <Route path='/contact' element={<Contact></Contact>}></Route>
             <Route path='/checkout' element={<CheckOut></CheckOut>}></Route>
            </Routes>
         </div>

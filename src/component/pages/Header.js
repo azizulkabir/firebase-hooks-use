@@ -12,9 +12,9 @@ const Header = () => {
         console.log('clicked sign out')
     }
     return (
-        <div className='p-1 mx-auto w-50'>
+        <div className='p-1 text-center'>
             <Link className='btn btn-secondary mx-1' to='/'>Home</Link>
-            <Link className='btn btn-secondary mx-1' to='/about'>About</Link>
+            <Link className='btn btn-secondary mx-1 ' to='/contact'>Contact</Link>
             <Link className='btn btn-secondary mx-1' to='/checkout'>Checkout</Link>
 
             {

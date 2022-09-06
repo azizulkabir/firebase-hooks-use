@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { Link } from 'react-router-dom';
 import auth from '../../firebase.init';
 
 const Register = () => {
@@ -53,9 +54,10 @@ const Register = () => {
                         <Form.Label>Password</Form.Label>
                         <Form.Control onBlur={handlePassword} type="password" placeholder="Password" />
                     </Form.Group>
-                    <Button variant="primary" type="submit">
+                    <Button variant="info" type="submit">
                         Register
-                    </Button>
+                    </Button><br />
+                    <>  Already have an account?? <Link className='btn btn-info' to="/login">Login Here</Link></>
                 </Form>
             </div>
         </div>
