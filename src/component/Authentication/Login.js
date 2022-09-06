@@ -37,10 +37,9 @@ const Login = () => {
     return (
         <div>
 
+            
             <button onClick={() => signInWithGoogle()}> Google SignIn</button>
             <button onClick={() => signInWithGithub()}> Github SignIn</button>
-
-
         </div>
     );
 };
